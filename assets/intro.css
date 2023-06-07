@@ -1,5 +1,5 @@
  header {
-     height: 150px;
+     height: 200px;
  }
 
  * {
@@ -36,7 +36,6 @@
      font-size: 20px;
      text-align: center;
      background-color: #66202A;
-     margin-top: 50px;
  }
 
  nav ul {
@@ -56,12 +55,12 @@
      position: relative;
      padding: 60px;
      color: #EFD9A7;
+     padding: 20px;
  }
 
  nav a:hover {
      background-color: #192d2e;
      color: white;
-     padding: 20px;
  }
 
 
