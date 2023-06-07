@@ -1,0 +1,116 @@
+ header {
+     height: 150px;
+ }
+
+ * {
+     margin: 0px auto;
+ }
+
+ footer {
+     height: 40px;
+     background-color: #66202A;
+     text-align: center;
+     padding: 20px;
+     margin: 10px;
+
+ }
+
+ footer a {
+     color: #EFD9A7;
+ }
+
+ body {
+     background-image: url(../image/background.jpg);
+
+ }
+
+ .logo {
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     position: relative;
+     left: 44%;
+     top: 5px;
+ }
+
+ nav {
+     height: 70px;
+     font-size: 20px;
+     text-align: center;
+     background-color: #66202A;
+     margin: 10px;
+ }
+
+ nav ul {
+     margin: 0;
+     position: relative;
+     top: 25px;
+
+ }
+
+ nav li {
+     display: inline-block;
+     position: relative;
+     list-style: none;
+ }
+
+ nav a {
+     position: relative;
+     padding: 60px;
+     color: #EFD9A7;
+ }
+
+ .lucys {
+     height: 100px;
+     position: relative;
+     left: 43%;
+     top: 10px;
+     border-radius: 10%;
+     margin-bottom: 20px;
+ }
+
+ .vacanza {
+     height: 100px;
+     position: relative;
+     left: 45%;
+     top: 10px;
+     border-radius: 10%;
+     margin-bottom: 20px;
+ }
+
+
+ .bonny {
+     height: 100px;
+     position: relative;
+     left: 47%;
+     top: 10px;
+     border-radius: 10%;
+     margin-bottom: 20px;
+ }
+
+ main {
+     width: 75%;
+     display: grid;
+
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-auto-flow: row;
+     grid-gap: 10px;
+ }
+
+ .card {
+     background-color: #192D2E;
+     padding: 20px;
+     margin: 10px;
+     border-radius: 10%;
+     text-align: center;
+ }
+
+ .card a {
+     color: #EFD9A7;
+ }
+
+ .pic {
+     width: 245px;
+     height: 245px;
+     border-radius: 10%;
+ }

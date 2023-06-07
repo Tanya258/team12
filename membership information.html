@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>會員資料</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="image/logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="membership information.html">會員資料</a></li>
+          <li><a href="text record.html">留言紀錄</a></li>
+          <li><a href="custom record.html">歷史消費紀錄</a></li>
+        </ul>
+    </nav>
+    <article>
+        <table>
+            <tr>
+                <th colspan="2">會員基本資料</th>
+            </tr>
+            <tr>
+                <td>姓名: <input type="text" name="username" value=""></td>
+                <td>性別: <input type="radio" name="gender" value="male">男<input type="radio" name="gender" value="female">女<input type="radio" name="gender" value="noans">不透露</td>
+            </tr>
+            <tr>
+                <td>生日: <input type="date" name="selsctdate"></td>
+                <td>手機號碼: <input type="text" name="celephone" value="" size="10" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td colspan="2">地址: <input type="text" name="live" value="" size="60"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><form>電子信箱:<input type="email" name="mail" value="" size="60"></form></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="ad" value="訂閱電子報" checked/>訂閱電子報</td>
+            </tr>
+            <tr><td><form method="post" action="">
+                <input type="submit" value="送出" />
+                <input type="reset" value="重填" />
+            </form></td></tr>
+       </table> 
+    </article>
+</body>
+</html>

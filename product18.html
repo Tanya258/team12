@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/product.css">
+    <script src="https://kit.fontawesome.com/91ed37b254.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>[純銀] 極光耳環</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="image/logo.png"></a>
+  </header>
+  <nav>
+      <ul>
+        <li><a href="lucys.html">Lucy's</a></li>&nbsp;
+        <li><a href="vacanza.html">vacanza</a></li>&nbsp;
+        <li><a href="bonny.html">Bonny&Read</a></li>&nbsp;
+        <li><a href="aboutus.html">關於我們</a></li>&nbsp;
+        <li><a href="quection.html">Q&A</a></li>
+      </ul>
+  </nav>
+    <main>
+        <article>
+            <div class="card">
+                <div class="slideshowimg">
+                    <div class="slides fade">
+                        <div class="textnum">1/6</div>
+                        <img src="image/bonny/Aurora Earring1.webp" style="width:100%">
+                    </div>
+                    <div class="slides fade">
+                        <div class="textnum">2/6</div>
+                        <img src="image/bonny/Aurora Earring2.webp" style="width:100%">
+                    </div>
+                    <div class="slides fade">
+                        <div class="textnum">3/6</div>
+                        <img src="image/bonny/Aurora Earring3.webp" style="width:80%">
+                    </div>
+                    <div class="slides fade">
+                        <div class="textnum">4/6</div>
+                        <img src="image/bonny/Aurora Earring4.webp" style="width:80%">
+                    </div>
+                    <div class="slides fade">
+                        <div class="textnum">5/6</div>
+                        <img src="image/bonny/Aurora Earring5.webp" style="width:80%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>     
+                <script>
+                  let slideIndex = 1;
+                  showSlides(slideIndex);
+                  
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                  
+                  function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("slides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                  }
+                </script>
+              </div>
+              <div class="intro">
+                <h1>[純銀] 極光耳環</h1><br>
+                <h2>NT$420</h2><br>
+                <h1>顧客評價
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span></h1><br><br>
+                    <form action="/action_page.php">
+                        <label for="quantity">數量:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </form><br>
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button><br><br>
+                    <button class="btn"><i class="fa-solid fa-cart-shopping"></i>直接購買</button><br><br>
+                    <button class="btn"><i class="fa-regular fa-star"></i>加入追蹤清單</button><br>
+              </div>
+              <div class="clearfix"></div>
+              <div class="info">
+                <h2 class="head">商品規格與簡介</h2><br>
+                <ul>
+                    <li>種類：項鍊</li>
+                    <li>商品材質：S925低敏純銀</li>
+                    <li>耳針材質：S925低敏銀針</li>     
+                    <li>耳環SIZE長寬約：1 cm x 0.8 cm</li>
+                    <li>純銀飾品若無佩戴時，請先保持乾燥狀態，再放置飾品盒或是夾鏈袋乾燥陰涼處保存，避免氧化發黑。</li>
+                    <li><b>耳針商品屬於個人衛生用品，拆封後不得退換貨。</b></li>
+                    <li> 一對販售</li>  
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+              <div class="advice">
+                <h2 class="head">商品留言板</h2><br>
+                <h3>目前用戶:科基
+                  <div class="rating-box">
+                    <div class="rating">
+                     <span class="fa fa-star-o"></span>
+                     <span class="fa fa-star-o"></span>
+                     <span class="fa fa-star-o"></span>
+                     <span class="fa fa-star-o"></span>
+                     <span class="fa fa-star-o"></span>
+                    </div>
+                    <h4 id="rating-value"></h1>
+                  </div>
+                  <script src="asset/score.js"></script>
+                    <textarea name="discuss" cols="160" rows="5" wrap="hard"></textarea>
+                    <input type="submit" value="送出" /><br><br>
+                <h3>約克夏 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span><br></h3>
+                <p>純銀的簡約耳環，很好搭配</p><br><hr><br>
+                <h3>藏獒 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span><br></h3>
+                <p>低敏爾真讓我很安心</p><br><hr><br> 
+              </div>
+        </article>
+    </main>
+    <div class="clearfix"></div>
+    <footer><h5>Copyright @ 2023 All rights reserved</h5></footer>
+</body>
+</html>

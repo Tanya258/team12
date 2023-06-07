@@ -1,0 +1,149 @@
+ header {
+     height: 150px;
+ }
+
+ * {
+     margin: 0px auto;
+ }
+
+ footer {
+     height: 40px;
+     background-color: #66202A;
+     text-align: center;
+     padding: 20px;
+ }
+
+ footer a {
+     color: #EFD9A7;
+ }
+
+ body {
+     background-image: url(../image/background.jpg);
+     align-items: center;
+ }
+
+ .logo {
+     height: 130px;
+     width: 130px;
+     border-radius: 50%;
+     position: relative;
+     left: 47.5%;
+     margin-top: 20px;
+ }
+
+ nav {
+     height: 70px;
+     font-size: 20px;
+     text-align: center;
+     background-color: #66202A;
+     margin-top: 50px;
+ }
+
+ nav ul {
+     margin: 0;
+     position: relative;
+     top: 25px;
+
+ }
+
+ nav li {
+     display: inline-block;
+     position: relative;
+     list-style: none;
+ }
+
+ nav a {
+     position: relative;
+     padding: 60px;
+     color: #EFD9A7;
+ }
+
+ nav a:hover {
+     background-color: #192d2e;
+     color: white;
+     padding: 20px;
+ }
+
+
+ .lucys {
+     height: 100px;
+     position: relative;
+     left: 43%;
+     top: 10px;
+     border-radius: 10%;
+     margin-bottom: 20px;
+ }
+
+ .vacanza {
+     height: 100px;
+     position: relative;
+     left: 45%;
+     top: 10px;
+     border-radius: 10%;
+     margin-bottom: 20px;
+ }
+
+
+ .bonny {
+     height: 100px;
+     position: relative;
+     left: 47%;
+     top: 10px;
+     border-radius: 10%;
+     margin-bottom: 20px;
+ }
+
+ main {
+     width: 75%;
+     display: grid;
+
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-auto-flow: row;
+     grid-gap: 10px;
+ }
+
+ .card {
+     background-color: #192D2E;
+     padding: 20px;
+     margin: 10px;
+     border-radius: 10%;
+     text-align: center;
+ }
+
+ .card a {
+     color: #EFD9A7;
+ }
+
+ .pic {
+     width: 245px;
+     height: 245px;
+     border-radius: 10%;
+ }
+
+ .member_details {
+     font-family: 'Noto Sans TC', sans-serif;
+     position: relative;
+     right: 20px;
+     float: right;
+     color: #6b6b6b;
+     margin-top: 15px;
+ }
+
+ .material-symbols-outlined {
+     font-variation-settings:
+         'FILL' 0,
+         'wght' 400,
+         'GRAD' 0,
+         'opsz' 48;
+     position: relative;
+     left: 42%;
+     float: left;
+     margin-top: 15px;
+ }
+
+ .searching {
+     position: relative;
+     left: 43%;
+     margin-bottom: 20px;
+     margin-top: 15px;
+ }

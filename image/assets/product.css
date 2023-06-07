@@ -1,0 +1,90 @@
+header {
+    height: 150px;
+}
+
+* {
+    margin: 0px auto;
+}
+
+body {
+    background-image: url(../image/background.jpg);
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: 44%;
+    top: 5px;
+}
+
+article {
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+main {
+    width: 55%;
+    position: relative;
+    top: 20px;
+}
+
+.pic {
+    float: left;
+    width: 275px;
+    height: 275px;
+
+}
+
+.pic:hover {
+    width: 350px;
+    height: 350px;
+}
+
+
+h1 {
+    color: #192D2E;
+}
+
+h2 {
+    color: #66202A;
+}
+
+section {
+    color: #192D2E;
+    font-size: large;
+}
+
+select {
+    color: #EFD9A7;
+    font-size: large;
+    background-color: #192D2E;
+}
+
+button {
+    color: #EFD9A7;
+    font-size: large;
+    background-color: #192D2E;
+}
+
+
+.head {
+    background-color: #192D2E;
+    color: #EFD9A7;
+    border-radius: 13px;
+    width: 70%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+ul {
+    position: relative;
+    top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}

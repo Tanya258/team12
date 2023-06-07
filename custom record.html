@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷史消費紀錄</title>
+    <link rel="stylesheet" href="assets/csrecord.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="image/logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="membership information.html">會員資料</a></li>
+          <li><a href="text record.html">留言紀錄</a></li>
+          <li><a href="custom record.html">歷史消費紀錄</a></li>
+        </ul>
+    </nav>
+    <article>
+        <button class="accordion"> 
+            <div class="ti">
+                商品名稱:摺紙系列 | 925純銀 散步貓 項鍊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品編號:107049&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下單日期:2023-05-22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配送狀態:已送達
+            </div>   
+        </button>
+        <div class="panel">
+            <p>
+              商品名稱:摺紙系列 | 925純銀 散步貓 項鍊<br>
+              商品編號:107049<br>
+              訂單編號:29885465258<br>
+              下單日期:2023-05-22<br>
+              付款方式:現金<br>
+              金額:NT$480<br>
+              配送方式:超商取貨<br>
+              配送地址:7-11 XX店<br>
+              配送狀態: 已送達 <br>
+            </p>
+        
+        </div>
+        <button class="accordion">
+            <div class="ti">
+                商品名稱:摺紙系列 | 925純銀 散步貓 項鍊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品編號:109632&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下單日期:2023-05-03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配送狀態:已送達
+            </div>
+        </button>
+        <div class="panel">
+            <p>商品名稱:澄光・純銀耳環<br>
+                商品編號:109632<br>
+                訂單編號:2920773698<br>
+                下單日期:2023-05-03<br>
+                付款方式:現金<br>
+                金額:NT$1380<br>
+                配送方式:超商取貨<br>
+                配送地址:7-11 XX店<br>
+                配送狀態: 已送達 <br>
+            </p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </article>
+</body>
+</html>

@@ -1,0 +1,213 @@
+* {
+    margin: 0px auto;
+}
+
+body {
+    background-image: url(../image/background.jpg);
+}
+
+header {
+    height: 160px;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: 44%;
+    top: 5px;
+}
+
+nav {
+    height: 70px;
+    background-color: #66202A;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul {
+    margin: 0;
+    position: relative;
+    top: 25px;
+
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+
+nav a {
+    position: relative;
+    padding: 60px;
+    color: #EFD9A7;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: red;
+    color: white;
+}
+
+article {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+.slideshowimg {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.textnum {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+h1 {
+    color: #192D2E;
+}
+
+h2 {
+    color: #66202A;
+}
+
+.head {
+    background-color: #192D2E;
+    color: #EFD9A7;
+    border-radius: 13px;
+    width: 70%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+ul {
+    position: relative;
+    top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.intro {
+    float: left;
+    margin-left: 40px;
+}
+
+.card {
+    float: left;
+}
+
+.info {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.advice {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: red;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    padding: 12px 16px;
+    /* Some padding */
+    font-size: 16px;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #66202A;
+}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+}
+
+.checked {
+    color: orange;
+}
+
+footer {
+    height: 40px;
+    background-color: #66202A;
+    text-align: center;
+    padding: 20px;
+}
+
+h5 {
+    color: #EFD9A7;
+}

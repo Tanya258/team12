@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/log.css">
+    <title>登入註冊</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="image/logo.png"></a>
+    </header>
+    <article>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'log in')" id="defaultOpen">登入</button>
+            <button class="tablinks" onclick="openCity(event, 'sign up')">註冊</button>
+        </div>
+        <div id="log in" class="tabcontent">
+            <table>
+                <tr>
+                    <th><h3>登入</h3></th>
+                </tr>
+                <tr>
+                    <td>帳號: <input type="text" name="code" value="" placeholder="請輸入帳號、手機號碼或電子信箱" size="50"></td>
+                </tr>
+                <tr>
+                    <td>密碼: <input type="password" name="psw" value="" size="50"></td>
+                </tr>
+                <tr><td><form method="post" action="">
+                    <input type="submit" value="確定送出" />
+                    <input type="reset" value="清除" />
+                    <div class="fp"><a href="">忘記密碼?</a></div>
+                </form></td></tr>
+                <tr>
+                    <td><p>logging with</p><img src="image/fb.png" alt="fb"><img src="image/line.png" alt="line"><img src="image/google.png" alt="google"></td>
+                </tr>
+            </table>
+        </div>         
+        <div id="sign up" class="tabcontent">
+            <table>
+                <table>
+                    <tr>
+                        <th><h3>註冊</h3></th>
+                    </tr>
+                <tr>
+                    <td>請輸入帳號: <input type="text" name="code" value="" size="50" placeholder="至少4字元"></td>
+                </tr>
+                <tr>
+                    <td>請輸入密碼: <input type="password" name="psw" value="" size="50" placeholder="請輸入8-16字元，英數至少1個"></td>
+                </tr>
+                <tr>
+                    <td>請確認密碼: <input type="password" name="psw1" value="" size="50" placeholder="再輸入一次"></td>
+                </tr>
+                <tr><td><form method="post" action="">
+                    <input type="submit" value="送出" />
+                    <input type="reset" value="重填" />
+                </form></td></tr>
+            </table>
+        </div>      
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+        </script>
+    </article>
+</body>
+</html>
