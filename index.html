@@ -17,18 +17,19 @@
 </head>
 <body>
     <header>
+        <img src="image/younique.png" alt="younique" class="younique">
+        
         <a href="index.html"><img class="logo" src="image/logo.png"></a><br>
 
         <div class="member_details">
-            <a href="log in and inroll.html">登入 | 註冊 |</a> 
+            <a href="log in and inroll.html" >登入 | 註冊 |</a> 
             <a href="membership information.html">會員資料</a>
         </div>
-
-        <a href="cart.html">
-            <img src="image/cart.png" alt="cart" class="cart">
-        </a>
         
-        <span class="material-symbols-outlined">search</span><input type="search" class="searching" name="search" value="Search for item" size="25"/>
+        <div class="sear-line">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" class="searching" name="search" value="Search for item" size="25" onfocus="javascript:if(this.value=='Search for item')this.value='';"/>
+        </div>
     </header>
     <nav>
         <ul>
@@ -39,43 +40,103 @@
             <li><a href="quection.html">Q&A</a></li>
         </ul>
     </nav>
-    
-    <article>
-        <section class="section_container">
+    <main>
+        <article>
+            <section>
+            <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="image/bonny _x_ ginny.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="image/bonny_discount.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+        
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="image/vacanza_discount.png" style="width:100%">
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="image/vacanza_x_disney.png" style="width:100%">
+                <div class="text"></div>
+              </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        
+            <script>
+              let slideIndex = 0;
+                showSlides();
+        
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                  slides[slideIndex-1].style.display = "block";
+                  setTimeout(showSlides, 4000); // Change image every 2 seconds
+                  }
+        
+            </script>
+          </section>
+
+          <a href="cart.html">
+            <img src="image/cart.png" alt="cart" class="cart">
+          </a>
+
+          <section>
             <div class="container">
-                <a href="image/lucys_x_831.jpg" class="pic_large"><img  class='con_img' src="image/lucys_x_831.jpg"></a>
-                <a href="image/bonny _x_ ginny.png" class="pic_width"><img   class='con_img' src="image/bonny _x_ ginny.png"></a>
-                <a href="image/lucys_x_snapshot.png" class="pic_large"><img   class='con_img' src="image/lucys_x_snapshot.png"></a>
-                <a href="image/vacanza_x_disney.png" class="pic_large"><img   class='con_img' src="image/vacanza_x_disney.png"></a>                
-                <a href="image/bonny_discount.png" class="pic_width"><img   class='con_img' src="image/vacanza_discount.png"></a>
-                <a href="image/vacanza_discount.png" class="pic_width"><img   class='con_img' src="image/bonny_discount.png"></a>
+              <div class="card">
+                <img src="image/Lucys/l6.jpg" alt="hot_1" class="hot_pic">
+                <div class="info">
+                  <a href="product16.html">
+                    <button>View More</button>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <img src="image/vacanza/v5.jpg" alt="" class="hot_pic">
+                <div class="info">
+                  <a href="product11.html">
+                    <button>View More</button>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <img src="image/bonny/b4.jpg" alt="" class="hot_pic">
+                <div class="info">
+                  <a href="product6.html">
+                    <button>View More</button>
+                  </a> 
+                </div>
+              </div>
             </div>
-        </section>
-
-        <h1>Best - Seller</h1>
-        <div class="slider">
-            <div class="slides_img">
-                <input type="radio" name="slide" id="top1" checked>
-                <input type="radio" name="slide" id="top2">
-                <input type="radio" name="slide" id="top3">
-                <input type="radio" name="slide" id="top4">
-                <input type="radio" name="slide" id="top5">
-
-                <img src="image/Lucys/l6.jpg" class="pic_slide1" alt="top1">
-                <img src="image/bonny/b1.jpg" class="pic_slide2" alt="top2">
-                <img src="image/vacanza/v5.jpg" class="pic_slide3" alt="top3">
-                <img src="image/Lucys/l2.jpg" class="pic_slide4" alt="top4">
-                <img src="image/vacanza/v6.jpg" class="pic_slide5" alt="top5">
-            </div>
-            <div class="dots">
-                <label for="top1"></label>
-                <label for="top2"></label>
-                <label for="top3"></label>
-                <label for="top4"></label>
-                <label for="top5"></label>
-            </div>
-        </div>
-    </article>
+          </section>
+        </article>
+    </main>
+    <div class="clear"></div>
     <footer>
         <div class="contact">
             <a href="index.html" id="link_index">You NiQue</a><br>
@@ -83,7 +144,7 @@
             聯絡電話 : (03)-2783647 / (03)-63825326<br>
             電子信箱 : younique@gmail.com <span><a href="mailto:younique@gmail.com" id="link_mail"><img class="sendmail" src="image/sendmail.png"></a></span>
             
-        </div>
+        </div> 
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2566067191046!2d121.23820147432605!3d24.957382677866068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1685772385396!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

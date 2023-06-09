@@ -3,22 +3,21 @@
 }
 
 body {
-    font-size: 20px;
     background-image: url(../image/background.jpg);
 }
 
 header {
-    height: 160px;
+    height: 200px;
 }
 
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     border-radius: 50%;
     position: relative;
-    left: 44%;
-    top: 5px;
+    left: 18%;
+    top: 30px;
 }
 
 
@@ -31,7 +30,7 @@ article {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #66202A;
     text-align: center;
 }
 
@@ -43,18 +42,18 @@ article {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    color: #EFD9A7;
 }
 
 
 .tab button:hover {
     background-color: #ddd;
-
 }
 
 
 .tab button.active {
-    background-color: #ccc;
-
+    background-color: #192d2e;
+    color: white;
 }
 
 .tabcontent {
@@ -71,7 +70,7 @@ td {
     text-align: center;
 }
 
-img {
+.connect {
     margin: 20px 20px;
     height: 30px;
     width: 30px;
@@ -79,4 +78,9 @@ img {
 
 .fp {
     font-size: 10px;
+}
+
+.younique {
+    position: relative;
+    left: -20px
 }

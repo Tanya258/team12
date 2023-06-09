@@ -8,6 +8,12 @@ body {
     color: #EFD9A7;
 }
 
+.younique {
+    position: relative;
+    left: -20px
+}
+
+
 header {
     background-color: #ffe5d9;
     font-family: 標楷體;
@@ -125,10 +131,11 @@ nav a {
 }
 
 .total {
+    color: #EFD9A7;
     display: flex;
     justify-content: flex-end;
     margin-top: 1.5rem;
-    border-top: 1px solid #791E94;
+    border-top: 1px solid white;
 }
 
 .total-title {

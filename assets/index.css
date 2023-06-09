@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     margin: 0px auto;
 }
 
@@ -7,13 +6,18 @@ header {
     height: 200px;
 }
 
-.logo {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    margin-top: 20px;
+.younique {
     position: relative;
-    left: 47.5%;
+    left: -20px
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: relative;
+    left: 18%;
+    top: 30px;
 }
 
 body {
@@ -22,7 +26,7 @@ body {
 }
 
 nav {
-    height: 70px;
+    height: 77px;
     font-size: 20px;
     text-align: center;
     background-color: #66202A;
@@ -45,27 +49,37 @@ nav a {
     position: relative;
     padding: 60px;
     color: #EFD9A7;
-    padding: 20px;
+    padding: 27px;
 }
 
 nav a:hover {
     background-color: #192d2e;
     color: white;
+
 }
 
 .cart {
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    position: relative;
+    width: 70px;
+    height: 70px;
+    bottom: 15px;
+    left: 15px;
+    background-color: #fffce9;
+    border-radius: 35%;
+    position: fixed;
 }
 
 .searching {
     position: relative;
-    left: 35%;
-    margin-bottom: 40px;
-    top: -20px;
-    left: 38.5%;
+    top: 18px;
+    left: 10px;
+    border-style: none;
+    outline: none;
+}
+
+.sear-line {
+    position: relative;
+    left: 15px;
+    top: 10px;
 }
 
 .material-symbols-outlined {
@@ -75,7 +89,6 @@ nav a:hover {
         'GRAD' 0,
         'opsz' 48;
     position: relative;
-    left: 42%;
     float: left;
     margin-top: 15px;
 }
@@ -87,6 +100,49 @@ nav a:hover {
     float: right;
     color: #6b6b6b;
     margin-top: 15px;
+    top: 10px;
+}
+
+.member_details a:hover {
+    background-color: #192d2e;
+    color: #EFD9A7;
+    padding: 10px;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #6b2d54;
 }
 
 .section_container {
@@ -150,6 +206,145 @@ h1 {
     margin: 3px;
 }
 
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* slideshow indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active2,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.padding1 {
+    padding: 50px;
+    background-color: pink;
+    color: white;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #c13599;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    padding-right: 25px;
+}
+
+.button:hover:after {
+    opacity: 1;
+    right: 0;
+}
+
+.padding2 {
+    padding: 50px;
+    background-color: white;
+    color: white;
+}
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 27%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 #6b2d54;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+    background-color: pink;
+    height: 4cm;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 .dots label {
     height: 20px;
     width: 20px;
@@ -204,10 +399,58 @@ h1 {
     background-color: #617f7f;
 }
 
+.container {
+    margin-top: 40px;
+    margin: 20px;
+    height: auto;
+    background-color: #66202A;
+}
+
+.card {
+    /* 設定父親定位點 */
+    position: relative;
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.hot_pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    /*   display: none; */
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.info:hover {
+    -webkit-transition: 500ms;
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
 footer {
     background: linear-gradient(#e69675, #66202a);
     color: #EFD9A7;
-    margin-top: 50px;
+    margin-top: 40px;
     columns: 2;
     column-rule: silver 2px solid;
 }

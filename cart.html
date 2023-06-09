@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/cart.css.css">
+    <link rel="stylesheet" href="assets/cart.css">
 </head>
 
 <body>
+    <a href="index.html">
+        <img src="image/younique.png" alt="younique" class="younique">
+    </a>
+
     <section class="cart">
         <h1 class="cart-title">Shopping Cart</h1>
         <div class="cart-content">
@@ -33,15 +37,14 @@
                         <div class="g-title">品名:925純銀 繁盛枝芽 開口戒 (二色)</div>
                         <div class="g-price">價格:$480</div>
                     </div>
-                    <input type="number" value="1" class="cart-quantity">
+                    <input type="number" value="1" class="cart-quantity" min="1">
                     <i class='bx bxs-trash cart-remove'></i>
                 </div>
             </div>
         </div>
-
         <div class="total">
             <div class="total-title">總計:</div>
-            <div class="total-price">$0</div>
+            <div class="total-price">$1060</div>
         </div>
 
         <button type="button" class="button-buy">現在購買</button>

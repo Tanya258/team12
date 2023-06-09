@@ -7,20 +7,20 @@ body {
 }
 
 header {
-    height: 160px;
+    height: 200px;
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     border-radius: 50%;
     position: relative;
-    left: 44%;
-    top: 5px;
+    left: 18%;
+    top: 30px;
 }
 
 nav {
-    height: 70px;
+    height: 77px;
     background-color: #66202A;
     text-align: center;
     font-size: 20px;
@@ -43,7 +43,7 @@ nav a {
     position: relative;
     padding: 60px;
     color: #EFD9A7;
-    padding: 20px;
+    padding: 27px;
 }
 
 nav a:hover {
@@ -210,4 +210,9 @@ footer {
 
 h5 {
     color: #EFD9A7;
+}
+
+.younique {
+    position: relative;
+    left: -20px
 }
